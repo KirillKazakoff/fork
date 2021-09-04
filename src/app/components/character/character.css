@@ -1,0 +1,37 @@
+.character {
+    margin-top: 5px;
+    margin-left: 5px;
+
+    display: block;
+    width: 90%;
+    padding-bottom: 90%;
+    position: absolute;
+    z-index: 99;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left 20% top;
+}
+
+.health-indicator {
+    width: 80%;
+}
+
+.health-level {
+    top: 2px;
+    left: 7px;
+    position: absolute;
+    height: 4px;
+    background: #000;
+}
+
+.health-level-high {
+    background: #0f0;
+}
+
+.health-level-normal {
+    background: #ff0;
+}
+
+.health-level-critical {
+    background: #f00;
+}

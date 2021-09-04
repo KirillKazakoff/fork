@@ -1,0 +1,54 @@
+.skillbox-menu {
+    position: absolute;
+    width: 40%;
+    z-index: 0;
+    height: 80%;
+    top: 45px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.skillbox-AI {
+    left: -85px;
+    background-image: url('./img/skillbox-AI.png');
+}
+
+.skillbox-PL {
+    right: -103px;
+    background-image: url('./img/skillbox-PL.png');
+}
+
+.skills {
+    margin-top: 34px;
+}
+
+.skill {
+    position: relative;
+    background-size: cover;
+    width: 45%;
+    padding-bottom: 45%;
+}
+
+.skills .skill::before {
+    left: -1px;
+    top: 1px;
+    border-radius: 0px;
+}
+
+.skill::before {
+    width: 103%;
+    padding-bottom: 88.5%;
+}
+
+.skillbox-AI .skill {
+    margin-left: 48px;
+}
+
+.skillbox-PL .skill {
+    margin-left: 30px;
+}
+
+.skill:nth-child(n+2) {
+    margin-top: 21px;
+}

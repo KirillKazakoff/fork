@@ -1,0 +1,54 @@
+.menu {
+    margin-left: 20px;
+    display: flex;
+    min-width: 300px;
+}
+
+.menu-icon:hover {
+    content: '';
+    left: 0;
+    top: 0;
+    display: block;
+    border: 4px;
+    border-radius: 50px;
+    border-color: #ff0;
+    border-style: solid;
+    opacity: 0.9;
+}
+
+.menu-icon {
+    background: url('../character/heroes/generic/generic.png');
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+
+.menu-buttons {
+    display: none;
+}
+
+.buttons-active {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.btn {
+    width: 100%;
+    font-family: 'MyFont';
+    font-weight: 400;
+    color: #212529;
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 5px;
+    font-size: 25px;
+    border-radius: 2px;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    border: none;
+}
+
+.menu-button:nth-child(n+2) {
+    margin-top: 20px;
+}

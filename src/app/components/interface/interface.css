@@ -1,0 +1,12 @@
+.interface{
+    position: relative;
+}
+
+.interface-PL {
+    float: left;
+    bottom: 400px;
+}
+
+.interface-AI {
+    float: right;
+}

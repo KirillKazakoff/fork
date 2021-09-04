@@ -1,0 +1,35 @@
+:root {
+    --cell-size: 64px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background: #000;
+    font-size: 16px;
+}
+
+.controls {
+    width: 200px;
+    margin-bottom: 30px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.board-container {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: -170px;
+    padding-right: 15px;
+}
+
+.card-wrapper {
+    position: relative;
+}

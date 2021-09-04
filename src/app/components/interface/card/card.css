@@ -1,0 +1,94 @@
+.char-in-card {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    width: 150px;
+    height: 150px;
+    margin-left: 105px;
+    margin-top: 80px;
+}
+
+.gem {
+    display: block;
+    position: absolute;
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.no-gem {
+    display: block;
+}
+
+.common {
+    background-image: url('./gem/CommonGem.png');
+}
+
+
+.card {
+    position: relative;
+    width: 350px;
+    height: 480px;
+    z-index: 1;
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.card-generic {
+    background-image: url('./cardTemplate/Neutral.png');
+}
+
+.card-bowman {
+    background-image: url('./cardTemplate/Bowman.png');
+}
+
+.card-swordsman {
+    background-image: url('./cardTemplate/Swordsman.png');
+}
+
+.card-magician {
+    background-image: url('./cardTemplate/Magician.png');
+}
+
+.card-daemon {
+    background-image: url('./cardTemplate/Daemon.png');
+}
+
+.card-undead {
+    background-image: url('./cardTemplate/Undead.png');
+}
+
+.card-vampire {
+    background-image: url('./cardTemplate/Vampire.png');
+}
+
+.specials {
+    -webkit-text-stroke: 2.5px #000;
+    text-align: center;
+    position: absolute;
+    color: white;
+    font-size: 45px;
+    display: block;
+    width: 50px;
+}
+
+.mana {
+    top: 9%;
+    left: 12%;
+}
+
+.health {
+    bottom: 5%;
+    right: 5%;
+}
+
+.attack {
+    bottom: 5%;
+    left: 13%;
+}

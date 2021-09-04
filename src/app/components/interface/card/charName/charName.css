@@ -1,0 +1,101 @@
+:root {
+    --mt: 1;
+}
+
+.char-name {
+    text-shadow:
+      3px -1px 0 #000,
+      -3px 1px 0 #000;
+    -webkit-text-stroke: 1px black;
+    font-family: 'MyFont';
+    font-size: 30px;
+
+    color: whitesmoke;
+
+    position: relative;
+    left: 3%;
+    top: 50%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.char-name span {
+    margin-left: 0.8%;
+}
+
+
+.space {
+    margin-left: 1.2%;
+    margin-right: 1.2%;
+}
+
+.w0 {
+    margin-top: calc(19px * var(--mt));
+    transform: rotate(-6.25rad);
+}
+
+.w1 {
+    margin-top: calc(19px * var(--mt));
+    transform: rotate(-6.3rad);
+}
+
+.w2 {
+    margin-top: calc(18px * var(--mt));
+    transform: rotate(-6.41rad);
+}
+
+.w3 {
+    margin-top: calc(15px * var(--mt));
+    transform: rotate(-6.44rad);
+}
+
+.w4 {
+    margin-top: calc(12px * var(--mt));
+    transform: rotate(-6.5rad);
+}
+
+.w5 {
+    margin-top: calc(8px * var(--mt));
+    transform: rotate(-6.42rad);
+}
+
+.w6 {
+    margin-top: calc(5px * var(--mt));
+    transform: rotate(-6.38rad);
+}
+
+.w7 {
+    margin-top: calc(2px * var(--mt));
+    transform: rotate(-6.35rad);
+}
+
+.w8 {
+    margin-top: calc(0px * var(--mt));
+    transform: rotate(-6.32rad);
+}
+
+.w9 {
+    margin-top: calc(0px * var(--mt));
+    transform: rotate(-6.25rad);
+}
+
+.w10 {
+    margin-top: calc(2px * var(--mt));
+    transform: rotate(-6.2rad);
+}
+
+.w11 {
+    margin-top: calc(2px * var(--mt));
+    transform: rotate(-6.08rad);
+}
+
+.w12 {
+    margin-top: calc(4px * var(--mt));
+    transform: rotate(-6.0rad);
+}
+
+.w13 {
+    margin-top: calc(12px * var(--mt));
+    transform: rotate(-5.83rad);
+}

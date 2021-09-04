@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('./fonts/BELWEB.ttf') format('truetype');
+}
+
+body {
+    font-size: 40px;
+    font-family: 'MyFont';
+} 

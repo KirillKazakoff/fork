@@ -1,0 +1,144 @@
+.board-container {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: -170px;
+    padding-right: 15px;
+}
+
+.board {
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.board__cell {
+    position: relative;
+    background-size: cover;
+}
+
+.board__cell::before {
+    z-index: 100;
+
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 90%;
+    padding-bottom: 80%;
+}
+
+.selected::before {
+    content: '';
+    display: block;
+    border: 4px;
+    border-radius: 500px;
+    box-sizing: border-box;
+    opacity: 0.9;
+    position: absolute;
+}
+
+.selected-yellow::before {
+    border-color: #ff0;
+    border-style: solid;
+}
+
+.selected-green::before {
+    border-color: #0f0;
+    border-style: dashed;
+}
+
+.selected-red::before {
+    border-color: #f00;
+    border-style: dashed;
+}
+
+
+
+.board.prairie {
+    --map-top-left-url: url('./img/prairie/map-top-left.png');
+    --map-top-url: url('./img/prairie/map-top.png');
+    --map-top-right-url: url('./img/prairie/map-top-right.png');
+    --map-bottom-left-url: url('./img/prairie/map-bottom-left.png');
+    --map-bottom-url: url('./img/prairie/map-bottom.png');
+    --map-bottom-right-url: url('./img/prairie/map-bottom-right.png');
+    --map-left-url: url('./img/prairie/map-left.png');
+    --map-right-url: url('./img/prairie/map-right.png');
+    --map-center-url: url('./img/prairie/map-center.png');
+}
+
+.board.desert {
+    --map-top-left-url: url('./img/desert/map-top-left.png');
+    --map-top-url: url('./img/desert/map-top.png');
+    --map-top-right-url: url('./img/desert/map-top-right.png');
+    --map-bottom-left-url: url('./img/desert/map-bottom-left.png');
+    --map-bottom-url: url('./img/desert/map-bottom.png');
+    --map-bottom-right-url: url('./img/desert/map-bottom-right.png');
+    --map-left-url: url('./img/desert/map-left.png');
+    --map-right-url: url('./img/desert/map-right.png');
+    --map-center-url: url('./img/desert/map-center.png');
+}
+
+.board.arctic {
+    --map-top-left-url: url('./img/arctic/map-top-left.png');
+    --map-top-url: url('./img/arctic/map-top.png');
+    --map-top-right-url: url('./img/arctic/map-top-right.png');
+    --map-bottom-left-url: url('./img/arctic/map-bottom-left.png');
+    --map-bottom-url: url('./img/arctic/map-bottom.png');
+    --map-bottom-right-url: url('./img/arctic/map-bottom-right.png');
+    --map-left-url: url('./img/arctic/map-left.png');
+    --map-right-url: url('./img/arctic/map-right.png');
+    --map-center-url: url('./img/arctic/map-center.png');
+}
+
+.board.mountain {
+    --map-top-left-url: url('./img/mountain/map-top-left.png');
+    --map-top-url: url('./img/mountain/map-top.png');
+    --map-top-right-url: url('./img/mountain/map-top-right.png');
+    --map-bottom-left-url: url('./img/mountain/map-bottom-left.png');
+    --map-bottom-url: url('./img/mountain/map-bottom.png');
+    --map-bottom-right-url: url('./img/mountain/map-bottom-right.png');
+    --map-left-url: url('./img/mountain/map-left.png');
+    --map-right-url: url('./img/mountain/map-right.png');
+    --map-center-url: url('./img/mountain/map-center.png');
+}
+
+
+.top {
+    background-image: var(--map-top-url);
+}
+
+.top-left {
+    background-image: var(--map-top-left-url);
+}
+
+.top-right {
+    background-image: var(--map-top-right-url);
+}
+
+.bottom-left {
+    background-image: var(--map-bottom-left-url);
+}
+
+.bottom-right {
+    background-image: var(--map-bottom-right-url);
+}
+
+.bottom {
+    background-image: var(--map-bottom-url);
+}
+
+.left {
+    background-image: var(--map-left-url);
+}
+
+.right {
+    background-image: var(--map-right-url);
+}
+
+.center {
+    background-image: var(--map-center-url);
+}

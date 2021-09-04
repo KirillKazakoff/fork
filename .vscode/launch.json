@@ -6,32 +6,46 @@
             "request": "launch",
             "type": "pwa-chrome",
             "url": "http://localhost:8080/dist",
-            "webRoot": "${workspaceFolder}",
+            "webRoot": "${workspaceFolder}"
         },
-        
-    {
-        "name": "app.js",
-        "program": "${workspaceFolder}/src/js/app.js",
-        "request": "launch",
-        "skipFiles": [
-            "<node_internals>/**"
-        ],
-        "type": "pwa-node"
-    },
-
-    {
-        "name": "Debug Jest Tests",
-        "type": "node",
-        "request": "launch",
-        "runtimeArgs": [
-            "--inspect",
-            "${workspaceRoot}/node_modules/.bin/jest",
-            "--runInBand",
-            "template.test.js"
-        ],
-        "console": "integratedTerminal",
-        "port": 8080
-    },
-
+        {
+            "name": "app.js",
+            "program": "${workspaceFolder}/src/js/app.js",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "pwa-node"
+        },
+        {
+            "name": "Debug Jest Tests",
+            "type": "node",
+            "request": "launch",
+            "runtimeArgs": [
+                "--inspect",
+                "${workspaceRoot}/node_modules/.bin/jest",
+                "--runInBand",
+                "template.test.js"
+            ],
+            "console": "integratedTerminal",
+            "port": 8080
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Jest Current File",
+            "program": "${workspaceFolder}/node_modules/.bin/jest",
+            "args": [
+                "${fileBasenameNoExtension}",
+                "--config",
+                "jest.config.js"
+            ],
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "disableOptimisticBPs": true,
+            "windows": {
+                "program": "${workspaceFolder}/node_modules/jest/bin/jest",
+            }
+        }
     ]
-  }
+}

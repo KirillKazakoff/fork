@@ -1,0 +1,34 @@
+.powershot {
+    /* top: 25px; */
+    top: 0px;
+    left: 10px;
+    position: absolute;
+    z-index: 1000;
+    background-position: bottom center;
+    background-image: url('./powershot.png');
+    background-repeat: no-repeat;
+    background-size: 700px 50px;
+    
+    height: 30px;
+    width: 1000px;
+
+    transform-origin: left bottom;
+}
+
+.powershot-pic {
+    background-image: url('./powershot-pic.png');
+}
+
+.effect-stop {
+    display: none;
+}
+
+/* 
+.arrow {
+    background-repeat: no-repeat;
+    position: absolute;
+    background-position: center;
+    background-image: url('../img/animationSkills/Arrow.png');
+    width: 100px;
+    height: 50px;
+} */
