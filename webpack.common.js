@@ -1,6 +1,7 @@
 const path = require('path'); // Node.js модуль для разрешения путей файлов
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
     target: 'web',
@@ -12,11 +13,12 @@ module.exports = {
     },
 
     devServer: {
+        port: 8080,
         contentBase: './',
         watchContentBase: true,
         publicPath: '/dist/',
+        clientLogLevel: "silent",
     },
-
     devtool: 'source-map',
 
     module: {
@@ -45,18 +47,18 @@ module.exports = {
                 },
             },
             {
-                test: /\.(png|jpg|gif|ttf)$/i,
+                test: /\.(png|jpg|gif|ttf|ico)$/i,
                 use: [
                     {
                         loader: 'url-loader',
-                        // options: {
-                        //     limit: 8192,
-                        // },
+                        options: {
+                            outputPath: 'img/',
+                            name: '[name].[ext]',
+                        },
                     },
                 ],
             },
-            
-        ], 
+        ],
     },
 
     resolve: {
@@ -69,14 +71,15 @@ module.exports = {
             filename: './index.html',
         }),
 
-        new HtmlWebpackPlugin({
-            template: 'src/menu.html',
-            filename: 'menu.html',
-        }),
-
         new MiniCssExtractPlugin({
             filename: '[name].css',
         }),
+
+        // new CopyPlugin({
+        //     patterns: [
+        //         { from: "src/img", to: "img" },
+        //     ],
+        // }),
     ],
 
 };

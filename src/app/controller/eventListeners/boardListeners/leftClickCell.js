@@ -49,8 +49,8 @@ export function onCellLeftClick(event) {
 
             const promise = new Promise(async (resolve) => {
                 if (skillActive) {
-                    const killed = await activeChar[skillActive](char);
-                    if (killed[0]) onEnemyKill();
+                    const promisesRes = await activeChar[skillActive](char);
+                    if (promisesRes[0]) onEnemyKill(promisesRes[0]);
                 } else {
                     const killed = await activeChar.fight(char);
                     if (killed) onEnemyKill(killed);
